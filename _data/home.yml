@@ -10,7 +10,7 @@ project_entries:
     url: GitInstall-post
     desc: Git install on Mac OS
 
-  - title: GitHub Pages와 Jekyll로 블로그 시작하기 
+  - title: GitHub Pages 
     url: GitHubPages-post
     desc: Start blog with GitHub Pages and Jekyll
 
