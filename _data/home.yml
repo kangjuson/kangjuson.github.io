@@ -7,7 +7,7 @@ navbar_entries:
 
 project_entries:
   - title: Git 설치하기
-    url: _posts/2023-10-26-overview-post.md
+    url: git설치하기
     desc: This is an example project, configured in _data/home.yml
 
   - title: Project 2
