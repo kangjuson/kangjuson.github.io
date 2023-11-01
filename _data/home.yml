@@ -10,9 +10,9 @@ project_entries:
     url: GitInstall-post
     desc: Git install on Mac OS
 
-  - title: Project 2
+  - title: GitHub Pages와 Jekyll로 블로그 시작하기 
     url: GitHubPages-post
-    desc: Projects are shown in card layout
+    desc: Start blog with GitHub Pages and Jekyll
 
   - title: Project 3
     url: overview-post
