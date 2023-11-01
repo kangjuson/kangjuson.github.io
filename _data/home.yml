@@ -11,7 +11,7 @@ project_entries:
     desc: Git install on Mac OS
 
   - title: Project 2
-    url: overview-post
+    url: GitHubPages-post
     desc: Projects are shown in card layout
 
   - title: Project 3
