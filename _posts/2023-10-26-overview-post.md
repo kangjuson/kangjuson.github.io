@@ -1,5 +1,5 @@
 ---
-title: Git 설치하기
+post-title: Git 설치하기
 layout: post
 author: Kang Juson
 tags: [Git, Mac OS]
