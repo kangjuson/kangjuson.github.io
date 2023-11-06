@@ -18,7 +18,6 @@ tags: [Git, Mac OS, Utterances]
  ## 3. Utterances 스크립트 추가
  1. Utterances 설정: [Utterances](https://utteranc.es/)에 접속한다. (설치하면 자동으로 접속되기도 한다.) 접속한 뒤에 repository를 입력해 준다.
  ![image error](images/스크린샷 2023-11-06 오후 4.59.38.png)
- 
  설정을 완료하면, HTML `<script>` 태그를 자동으로 생성해 준다. (복사 해두길!)
  ![image error](images/스크린샷 2023-11-06 오후 4.59.58.png)
 
@@ -31,7 +30,8 @@ tags: [Git, Mac OS, Utterances]
 
 ## 3. 변경 사항 반영
  1. 변경 사항을 Git을 통하여 commit 하고 GitHub 저장소에 push 한다.
- 2. GitHub Pages가 자동으로 웹사이트를 재구성 하도록한다. (기다린다.) 
+ 2. GitHub Pages가 자동으로 웹사이트를 재구성 하도록한다.(기다린다.) 
+
 ---
 
 ## 4. 블로그에서 댓글 기능 확인
