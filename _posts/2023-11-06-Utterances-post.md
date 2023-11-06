@@ -8,6 +8,7 @@ tags: [Git, Mac OS, Utterances]
 - GitHub 계정이 필요
 - 해당 블로그의 GitHub 저장소가 있어야 함
 - GitHub Pages로 호스팅 되는 jekyll 블로그가 구축되어 있어야 함
+
 ---
 
 ## 2. Utterances 스크립트 설정
