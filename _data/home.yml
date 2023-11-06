@@ -14,8 +14,8 @@ project_entries:
     url: GitHubPages-post
     desc: Start blog with GitHub Pages and Jekyll
 
-  - title: Project 3
-    url: overview-post
+  - title: Utterances
+    url: Utterances-post
     desc: You can control visibility from _config.yml file
 
 
