@@ -136,6 +136,14 @@ git push -u origin main
 
 --- 
 ## P.S.
-만약 3.2.X 버전을 깔았는데 3.1.X 버전이 아니여서 로컬 서버가 안열린다면 
+만약 3.2.X 버전을 깔았는데 
+```sh
+.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/liquid-4.0.3/lib/liquid/variable.rb:124:in `taint_check': undefined method `tainted?' for "/":String (NoMethodError)
+
+      return unless obj.tainted?
+                       ^^^^^^^^^
+```
+이러한 오류가 뜬다면 (3.1.X 버전이 아니여서 로컬 서버가 안열린다면)
+ 
 `rbenv install 3.1.X `를 한뒤에 `rbenv global 3.1.X`를 해주고
 `gem install jekyll` 을 해준 뒤, `bundle install` 을 입력해주고 설치가 끝난 뒤 `bundler exec jekyll serve`를 입력하면 로컬 서버를 열 수 있을 것이다.
