@@ -133,3 +133,9 @@ git push -u origin main
 드디어 길고 긴 과정이 모두 끝이 났다. 진짜 jekyll 깔면서 Ruby 버전이 안맞아서 깔리지도 않고 Ruby를 새로 깔았는데도 버전은 바뀌지도 않는 등 여러가지 시행착오를 거쳤지만 막상 완성하고 나면 뿌듯함을 말로 형용할 수 없을 것이다. 적어도 나는 그랬으니까. 
 
 많은 사람들이 이 Post로 인해서 많은 도움이 되었길 바랍니다. 긴 글 읽어주셔서 감사합니다.
+
+--- 
+## P.S.
+만약 3.2.X 버전을 깔았는데 3.1.X 버전이 아니여서 로컬 서버가 안열린다면 
+`rbenv install 3.1.X `를 한뒤에 `rbenv global 3.1.X`를 해주고
+`gem install jekyll` 을 해준 뒤, `bundle install` 을 입력해주고 설치가 끝난 뒤 `bundler exec jekyll serve`를 입력하면 로컬 서버를 열 수 있을 것이다.
