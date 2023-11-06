@@ -16,7 +16,7 @@ project_entries:
 
   - title: Utterances
     url: Utterances-post
-    desc: You can control visibility from _config.yml file
+    desc: Utterances로 댓글기능 추가하기
 
 
 old_project_entries:
