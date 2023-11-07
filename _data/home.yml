@@ -7,15 +7,15 @@ navbar_entries:
 
 project_entries:
   - title: Git 설치하기
-    url: GitInstall-post
+    url: gitinstall-post
     desc: Git install on Mac OS
 
   - title: GitHub Pages 
-    url: GitHubPages-post
+    url: githubpages-post
     desc: Start blog with GitHub Pages and Jekyll
 
   - title: Utterances
-    url: Utterances-post
+    url: utterances-post
     desc: Utterances로 댓글기능 추가하기
 
 
