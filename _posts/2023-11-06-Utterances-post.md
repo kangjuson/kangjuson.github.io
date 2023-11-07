@@ -49,3 +49,6 @@ tags: [Git, Mac OS, Utterances]
 
  ---
  오늘 한 Utterance는 지난번에 Ruby를 설치하거나 GitHub Pages를 열거나 하는것 보단 한참 쉬웠다. 제발 다음 할 것도 이러기를.
+
+## P.S.
+내 테마에서 Utteracnes를 추가 했는데 댓글을 달려고 보니 Github 로그인이 안되어서 살펴보니 `_config.yml` 파일에 url 부분을 내 주소로 변경하니 해결 되었다.
