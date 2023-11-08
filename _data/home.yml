@@ -6,7 +6,7 @@ navbar_entries:
     url: blog
 
 project_entries:
-  - title: Git 설치하기
+  - title: Install Git
     url: gitinstall-post
     desc: Git install on Mac OS
 
@@ -16,36 +16,18 @@ project_entries:
 
   - title: Utterances
     url: utterances-post
-    desc: Utterances로 댓글기능 추가하기
+    desc: Add comment feature with Utterances
 
 
 old_project_entries:
-  - title: Soopr
-    url: https://www.soopr.co
-    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
+  - title: Pygame
+    url: https://github.com/kangjuson/pygame-bravo-rpg
+    desc: Making RPG with pygame
     highlight: NEW
 
-  - title: Cookie
-    url: https://github.com/abhinavs/cookie
-    desc: An open source landing website with supporting pages and integrated blog
-
-  - title: Moonwalk
-    url: https://github.com/abhinavs/moonwalk
-    desc: A fast and minimalist Jekyll blog theme with clean dark mode
-
-  - title: Humangous
-    url: https://www.humangous.co
-    desc: The better people know you, the better they collaborate
-
 footer_entries:
-  - title: twitter
-    url: https://twitter.com/abhinav
-
   - title: github
     url: https://github.com/kangjuson
-
-  - title: feed
-    url: feed.xml
 
 misc_entries:
   - title: this is an example vertical list
