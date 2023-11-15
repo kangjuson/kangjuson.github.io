@@ -18,6 +18,9 @@ project_entries:
     url: utterances-post
     desc: Add comment feature with Utterances
 
+  - title: Google Analytics
+    url: googleanalytics-post
+    desc: Add comment feature with Utterances
 
 old_project_entries:
   - title: Pygame

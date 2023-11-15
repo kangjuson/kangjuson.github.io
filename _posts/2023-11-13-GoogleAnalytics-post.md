@@ -13,59 +13,66 @@ Google Analytics는 웹사이트의 트래픽을 분석하고 사용자의 행�
 
 ## 1. Google Analytics 계정 설정
  1. [Google Analytics 웹사이트](https://analytics.google.com/)로 이동하여 로그인하거나 계정을 생성한다.
+ 
  2. 관리 탭으로 이동하여 새로운 계정을 생성한다.
     ![image error](images/스크린샷 2023-11-13 오후 5.18.57.png)
+
  3. 새 웹사이트에 대한 속성을 설정한다.
+
     ![image error](images/스크린샷 2023-11-13 오후 5.21.17.png)
-     비지니스 설명에 대해선 그냥 하고 싶은 대로 하면 된다.
+
+ 4.  비지니스 설명에 대해선 그냥 하고 싶은 대로 하면 된다.
      ![image error](images/스크린샷 2023-11-13 오후 5.22.02.png)
-     비지니스 목표는 기준 보고서 보기 로 설정해 준다.
+
+ 5. 비지니스 목표는 기준 보고서 보기 로 설정해 준다.
      ![image error](images/스크린샷 2023-11-13 오후 5.23.21.png)
-     웹사이트를 입력한다.
+
+ 6. 웹사이트를 입력한다.
      ![image error](images/스크린샷 2023-11-13 오후 5.25.02.png)
+
  4. 추적 ID를 받는다.
    ![image error](images/스크린샷 2023-11-13 오후 5.25.21.png)
 
 ---
 
-## 2. Utterances 스크립트 설정
- 1. Utterances GitHub 앱 설치: [Utterances GitHub App](https://github.com/apps/utterances)로 이동하여 GitHub 블로그 저장소에 대해 App을 설치한다.
- 2. 댓글을 위한 GitHub Issue  작성 방식 결정: 댓글을 각각의 포스트에 해당하는 Issue로 관리할지, 또는 다른 기준으로 관리할지 결정
- ---
+## 2. Jekyll 블로그에 추적코드 추가
+ 1. Jekyll 사이트의 `_config.yml 파일을 연다. (없는 경우 3번으로)
+ 2. analytics 관련 설정이 있는지 칮아보고, 적절히 수정한다.
+ 3. Google Analytics 추적 코드를 포함할 설정이 없는 경우, 직접 HTML 파일을 설정한다. 보통은 `_includes` 폴더 내의 `head.html` 파일을 사용한다.
+ 4. `head.html` 파일을 열고, 위에서 복사한 추적 코드 스니펫을 `</head>` 태그 바로 앞에 붙여넣는다.
+   ![image error](images/스크린샷 2023-11-15 오후 4.43.53.png)
 
- ## 3. Utterances 스크립트 추가
- 1. Utterances 설정: [Utterances](https://utteranc.es/)에 접속한다. (설치하면 자동으로 접속되기도 한다.) 접속한 뒤에 repository를 입력해 준다.
- ![image error](images/스크린샷 2023-11-06 오후 4.59.38.png)
- 설정을 완료하면, HTML `<script>` 태그를 자동으로 생성해 준다. (복사 해두길!)
- ![image error](images/스크린샷 2023-11-06 오후 4.59.58.png)
+   ```html
+   <--! Google tag (gtag.js) -->
+   <script async src="https://googletagmanager.com/gtag/js?id=G-
+   HH2DRPJVWC"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
- 2. 블로그 테마에 맞는 위치 선택: 댓글을 표시하고자 하는 위치를 결정한다. 대개 `-layouts/post.html` 파일내에 적당한 위치를 찾는다.
+      gtag('config', 'G-HH2DRPJVWC');
+   <script>
+   ```
+   ![image error](images/스크린샷 2023-11-15 오후 4.43.41.png)
 
- 3. 스크립트 태그 삽입: 아까 복사해둔 `<script>` 태그를 붙여 넣는다.
- ![image error](images/스크린샷 2023-11-06 오후 5.09.11.png)
-
----
-
-## 3. 변경 사항 반영
- 1. 변경 사항을 Git을 통하여 commit 하고 GitHub 저장소에 push 한다.
- 2. GitHub Pages가 자동으로 웹사이트를 재구성 하도록한다.(기다린다.) 
-
----
-
-## 4. 블로그에서 댓글 기능 확인
- 1. 본인 블로그 포스트 페이지를 방문하여 Utterances 댓글이 정상적으로 작동하는지 확인한다.
- 2. 처음 댓글이 게시되면, GitHub 저장소에 해당 내용이 Issue로 생성된다. 
- ![image error](images/스크린샷 2023-11-06 오후 5.15.27.png)
- ![image error](images/스크린샷 2023-11-06 오후 5.16.13.png)
-
----
-
-# 주의 사항
- - GitHub Pages 사이트는 Public이어야 하며, 저장소의 Issue가 활성화 되어 있어야 한다.
- - 사용자가 댓글을 작성하려면 GitHub 계정이 있어야 한다.
+ 5. 모든 변경 사항을 저장하고 GitHub에 커밋 및 푸시한다.
 
  ---
- 오늘 한 Utterance는 지난번에 Ruby를 설치하거나 GitHub Pages를 열거나 하는것 보단 한참 쉬웠다. 제발 다음 할 것도 이러기를.
 
-## P.S.
-내 테마에서 Utteracnes를 추가 했는데 댓글을 달려고 보니 Github 로그인이 안되어서 살펴보니 `_config.yml` 파일에 url 부분을 내 주소로 변경하니 해결 되었다.
+# Google Analytics 사용하기
+
+ ---
+
+ 설정 후 Google Analytics는 자동으로 데이터를 수집하기 시작한다. 수집된 데이터를 보려면 다음 단계를 따라야 한다.
+  1. [Google Analytics 대시보드](https://analytics.google.com/) 로 이동한다.
+  ![image error](images/스크린샷 2023-11-15 오후 4.46.41.png)
+
+  2. 좌측 메뉴에서 실시간을 클릭하여 실시간 방문자 수를 확인하는 등 다양한 섹션에서 방문자의 여러 측면을 분석한다.
+  ![image error](images/스크린샷 2023-11-15 오후 4.47.01.png)
+
+  3. 대시보드를 사용자 정의 하여 가장 중요한 지표를 한눈에 볼 수 있도록 설정할 수 있다.
+
+---
+
+오늘은 google analytics 를 활용하여 트래픽을 분석할 수 있게 해보았다. 지금은 들어오는 사람이 없겠지만 구글에 사이트를 등록하므로써 구글 검색에 나올 수 있도록 다음에 해보겠다.
