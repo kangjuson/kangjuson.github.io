@@ -20,7 +20,11 @@ project_entries:
 
   - title: Google Analytics
     url: googleanalytics-post
-    desc: Add comment feature with Utterances
+    desc: Applying Google Analytics to your Jekyll blog
+  
+  - title: Search Console
+    url: searchconsole-post
+    desc: Improve your Google Search performance with Search Console
 
 old_project_entries:
   - title: Pygame
