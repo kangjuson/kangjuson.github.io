@@ -25,6 +25,10 @@ project_entries:
   - title: Search Console
     url: searchconsole-post
     desc: Improve your Google Search performance with Search Console
+  
+  - title: Agile
+    url: agile-post
+    desc: Software Develop methodology - Agile
 
 old_project_entries:
   - title: Pygame
