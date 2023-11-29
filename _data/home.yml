@@ -30,6 +30,10 @@ project_entries:
     url: agile-post
     desc: Software Develop methodology - Agile
 
+  - title: Pygame
+    url: pygame-post
+    desc: Making game with Pygame  
+
 old_project_entries:
   - title: Pygame
     url: https://github.com/kangjuson/pygame-bravo-rpg
