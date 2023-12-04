@@ -8,7 +8,7 @@ tags: [Pygame, Python, Game]
 ## Pygame
 
 pygame 이란 Python으로 작성 가능한 게임 등의 멀티미디어 표현을 위한 라이브러리이다. 오픈소스이자 무료 도구이며, Python을 돌릴 수 있는 플랫폼이면 어디서든 실행할 수 있다. 게임 개발 도구이지만 이미지 프로세스 또는 조이스틱 입력, 음악 재생 등의 기능만 떼어다 쓸 수도 있다.
-[출쳐: 나무위키](https://namu.wiki/w/Pygame)
+[출처: 나무위키](https://namu.wiki/w/Pygame)
 
 ---
 
