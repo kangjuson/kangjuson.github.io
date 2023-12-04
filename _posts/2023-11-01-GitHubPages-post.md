@@ -26,7 +26,8 @@ tags: [Git, Mac OS, GitHub, Jekyll]
  먼저 `brew install rbenv` 로 가장 최신 버전의 rbenv를 설치한다.
  ![image error](images/스크린샷 2023-11-01 오전 11.49.04.png)
 
- ### rbenv를 통해 Ruby 설치
+ - rbenv를 통한 Ruby 설치
+
  아래 명령을 통해서 rbenv로 설치 할 수 있는 Ruby 버전을 확인한다.
  `rbenv install -l`
  ![image error](images/스크린샷 2023-11-01 오전 11.53.14.png)
@@ -44,7 +45,7 @@ tags: [Git, Mac OS, GitHub, Jekyll]
  아래의 명령어를 통해 기본적으로 PowerShell 이 열리면 rbenv에 설치된 Ruby를 가리키도록 바꿔준다.
  (이렇게 안하면 설치한 의미가 없다.)
  ```sh
- rbenv globall 3.1.4
+ rbenv global 3.1.4
  ```
  ![image error](images/스크린샷 2023-11-01 오전 11.59.46.png)
 

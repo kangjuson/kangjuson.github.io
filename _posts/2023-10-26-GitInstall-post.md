@@ -13,7 +13,7 @@ Mac OS에 git을 설치하기 위해선 먼저 brew를 설치해야 한다.
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-- ** 우리의 사랑스러운 애플 실리콘 맥에선 기존 인텔 맥과 경로가 다르기 때문에 수정을 해줘야 한다. **
+- **우리의 사랑스러운 애플 실리콘 맥에선 기존 인텔 맥과 경로가 다르기 때문에 수정을 해줘야 한다.**
 ```sh
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<USER_ID>/.zprofile
 ```

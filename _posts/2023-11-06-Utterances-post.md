@@ -14,9 +14,10 @@ tags: [Git, Mac OS, Utterances]
 ## 2. Utterances 스크립트 설정
  1. Utterances GitHub 앱 설치: [Utterances GitHub App](https://github.com/apps/utterances)로 이동하여 GitHub 블로그 저장소에 대해 App을 설치한다.
  2. 댓글을 위한 GitHub Issue  작성 방식 결정: 댓글을 각각의 포스트에 해당하는 Issue로 관리할지, 또는 다른 기준으로 관리할지 결정
+
  ---
 
- ## 3. Utterances 스크립트 추가
+## 3. Utterances 스크립트 추가
  1. Utterances 설정: [Utterances](https://utteranc.es/)에 접속한다. (설치하면 자동으로 접속되기도 한다.) 접속한 뒤에 repository를 입력해 준다.
  ![image error](images/스크린샷 2023-11-06 오후 4.59.38.png)
  설정을 완료하면, HTML `<script>` 태그를 자동으로 생성해 준다. (복사 해두길!)
